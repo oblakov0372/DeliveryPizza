@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .img {
+    position: relative;
+    left: 30px;
+    opacity: 0.4;
+  }
+
+  .input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    padding-left: 40px;
+    width: 350px;
+    &:active {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 1050px) {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 880px) {
+    margin-bottom: 15px;
+  }
+}
+.imgClear {
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
